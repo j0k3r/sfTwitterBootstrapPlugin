@@ -67,14 +67,6 @@ default:
   layout:         %SF_PLUGINS_DIR%/sfTwitterBootstrapPlugin/templates/layout
 ```
 
-If you want to active colors by env add stylesheet :
-
-```yaml
-default:
-  stylesheets:
-    - /sfTwitterBootstrapPlugin/css/color-my-env.css
-```
-
 In ``apps/backend/config/app.yml``
 
 ```yaml
@@ -214,6 +206,48 @@ missing : Timestampable, Geocodable, I18n, Taggable, Ratable, Commentable, Neste
 
 #### Doctrine behaviors
 Unfortunately, Doctrine doesn't add cool method to retrieve information from its behavior, like Propel did.
+
+## Theme and graphic customisation
+
+### Top bar color by env
+If you want to active colors by env add stylesheet :
+
+```yaml
+default:
+  stylesheets:
+    ...
+    - /sfTwitterBootstrapPlugin/css/color-my-env.css
+```
+
+By default, we have 3 environment colors:
+
+* ``prod``: black
+* ``dev``: orange
+* ``preprod``: purple
+
+Take a look at the css file to add new one.
+
+### Use a [bootswatch](http://bootswatch.com/) color theme
+We integrate the 6 color themes from Bootswatch. If you want to use one of them, just replace this line in ``apps/backend/config/view.yml``
+
+```yaml
+    - /sfTwitterBootstrapPlugin/bootstrap/docs/assets/css/bootstrap.css # compiled css are now in the docs
+```
+
+by this one :
+
+```yaml
+    - /sfTwitterBootstrapPlugin/css/bootswatch/[theme].min.css
+```
+
+And finally replace ``[theme]`` by one this theme:
+
+* cerulan ([preview here](http://bootswatch.com/cerulean))
+* cyborg ([preview here](http://bootswatch.com/cyborg))
+* journal ([preview here](http://bootswatch.com/journal))
+* simplex ([preview here](http://bootswatch.com/simplex))
+* spacelab ([preview here](http://bootswatch.com/spacelab))
+* united ([preview here](http://bootswatch.com/united))
 
 ## Include a slot in all your screens :
 
