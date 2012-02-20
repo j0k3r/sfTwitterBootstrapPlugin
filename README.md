@@ -246,6 +246,7 @@ And finally replace ``[theme]`` by one this theme:
 * cyborg ([preview here](http://bootswatch.com/cyborg))
 * journal ([preview here](http://bootswatch.com/journal))
 * simplex ([preview here](http://bootswatch.com/simplex))
+* slate ([preview here](http://bootswatch.com/slate))
 * spacelab ([preview here](http://bootswatch.com/spacelab))
 * united ([preview here](http://bootswatch.com/united))
 
