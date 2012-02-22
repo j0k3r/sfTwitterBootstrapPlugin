@@ -248,6 +248,7 @@ And finally replace ``[theme]`` by one this theme:
 * simplex ([preview here](http://bootswatch.com/simplex))
 * slate ([preview here](http://bootswatch.com/slate))
 * spacelab ([preview here](http://bootswatch.com/spacelab))
+* superhero ([preview here](http://bootswatch.com/superhero))
 * united ([preview here](http://bootswatch.com/united))
 
 ## Include a slot in all your screens :
