@@ -227,6 +227,17 @@ By default, we have 3 environment colors:
 
 Take a look at the css file to add new one.
 
+### Highlight required label
+
+In your form class :
+
+```php
+$formatterObj = $this->widgetSchema->getFormFormatter();
+$formatterObj->setValidatorSchema($this->getValidatorSchema());
+```
+
+Of course, if you are using an admin generator it's automatic !
+
 ### Use a [bootswatch](http://bootswatch.com/) color theme
 We integrate the 6 color themes from Bootswatch. If you want to use one of them, just replace this line in ``apps/backend/config/view.yml``
 
@@ -240,7 +251,7 @@ by this one :
     - /sfTwitterBootstrapPlugin/css/bootswatch/[theme].min.css
 ```
 
-And finally replace ``[theme]`` by one this theme:
+And finally replace ``[theme]`` by one these themes:
 
 * cerulan ([preview here](http://bootswatch.com/cerulean))
 * cyborg ([preview here](http://bootswatch.com/cyborg))
@@ -261,17 +272,6 @@ default:
   components:
     sf_twitter_bootstrap_permanent_slot: [ Module, component ]
 ```
-
-## Highlight required label
-
-In your form class :
-
-```php
-$formatterObj = $this->widgetSchema->getFormFormatter();
-$formatterObj->setValidatorSchema($this->getValidatorSchema());
-```
-
-Of course, if you are using an admin generator it's automatic !
 
 ## sfGuard signin form
 
