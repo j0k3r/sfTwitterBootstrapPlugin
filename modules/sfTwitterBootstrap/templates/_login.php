@@ -16,12 +16,8 @@
         <?php echo $form->renderHiddenFields(); ?>
         <fieldset class="loginFieldset">
           <legend><?php echo sfTwitterBootstrap::getProperty('site'); ?></legend>
-          <div class="control-group <?php echo $form['username']->hasError() ? 'error': '' ?>">
-            <?php echo $form['username']->renderRow() ?>
-          </div>
-          <div class="control-group <?php echo $form['password']->hasError() ? 'error': '' ?>">
-            <?php echo $form['password']->renderRow() ?>
-          </div>
+          <?php echo $form['username']->renderRow() ?>
+          <?php echo $form['password']->renderRow() ?>
 
           <div class="form-actions">
             <button type="submit" class="btn btn-primary"><?php echo $icon . __('Sign in') ?></button>
